@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment-5</title>
+    <style></style>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List:</h1>
+        <form id="form">
+            <label for="text">Enter text</label>
+            <input type="text" id="text">
+            <button type="submit" id="Addbtn">Add task</button>
+            <button type="button" id="removebtn">Remove</button>
+        </form>
+        <ul id="list"></ul>
+    </div>
+    <script>
+        const form = document.getElementById('form');
+        const addButton = document.getElementById('Addbtn');
+        const removeButton = document.getElementById('removebtn');
+        const list = document.getElementById('list');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const text = document.getElementById('text').value;
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(text));
+            list.appendChild(li);
+            document.getElementById('text').value = "";
+        });
+
+        removeButton.addEventListener('click', function() {
+            const selectedItems = list.querySelectorAll('li');
+            selectedItems.forEach(function(item) {
+                item.remove();
+            });
+        });
+    </script>
+</body>
+</html>
