@@ -25,18 +25,20 @@ Writing cleaner, more maintainable JavaScript
 
 Enhancing UI design and responsiveness
 
+---
+
 🙋‍♂️ About Me
 Aditya Pratap Singh
 📌 Aspiring Full-Stack Developer | Passionate about UI/UX
 🌐 Portfolio
 🐙 GitHub
+---
 
 📜 License
 This project is licensed under the MIT License.
+---
 
 ⭐ Feedback & Support
 If you found this useful or inspiring, feel free to:
-
 ⭐ Star the repo
-
 🛠 Open issues or suggestions
